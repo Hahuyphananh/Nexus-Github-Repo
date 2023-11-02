@@ -1,0 +1,68 @@
+/* Reset some default styles for consistency */
+/* EST-CE QUE TU VOIS CECI?*/
+
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(50, 197, 255);
+}
+
+header {
+    background-color: #00A898;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-bar li{
+    display:inline-block;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.link-to-pages{
+    padding-left: 100px;
+    border: 1px dotted black;
+    border-bottom: none;
+}
+
+.link-to-pages a{
+   text-decoration: none;
+   color:black;
+}
+
+.edit-profile-button{
+    margin-left: 100px;
+    margin-top: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:25px;
+    cursor:pointer;
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    color:#fffaf8;
+    transition: 0.5s;
+}
+
+.edit-profile-button:hover{
+    background:#fff;
+    border:#fff solid 3px;
+    color:rgb(255, 255, 255);
+}

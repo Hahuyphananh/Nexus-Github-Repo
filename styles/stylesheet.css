@@ -120,5 +120,13 @@ button[type="submit"]:hover {
     background-color: #fff;
     color: #333;
   }
-  
+.create-practice-button{
+    margin-top: 30px;
+    margin-left: 120px;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: gold;
+    border: 1px solid gold;
+    font-weight:bold;
+}
   
