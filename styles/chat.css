@@ -67,6 +67,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top:300px;
+    width: 50px;
+    height: 30px;
 }
 
 /* Media Queries for responsiveness */
