@@ -1,14 +1,134 @@
 /* Reset some default styles for consistency */
 /* EST-CE QUE TU VOIS CECI?*/
 
-body, h1, h2, ul {
+body,
+h1,
+h2,
+ul {
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(50, 197, 255);
+    background-image: url('bg2.jpg');
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    border-radius: 75%;
+    height: 2px;
+    width: 2px;
+    background-color: #fff;
+    animation: animate 2s linear infinite;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translatex(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(315deg) translatex(-2000px);
+        opacity: 0;
+    }
+}
+
+span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+    transform: translateY(-50%);
+}
+
+span:nth-child(1) {
+    top: 0;
+    right: 80px;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+span:nth-child(2) {
+    top: 0;
+    left: initial;
+    right: 80px;
+    animation-delay: -0.2s;
+    animation-duration: 2s;
+}
+
+span:nth-child(3) {
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 1.5s;
+}
+
+span:nth-child(4) {
+    top: 0;
+    right: 280px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 2s;
+}
+
+span:nth-child(5) {
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(6) {
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+span:nth-child(7) {
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+span:nth-child(8) {
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+span:nth-child(9) {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+span:nth-child(10) {
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
 }
 
 header {
@@ -18,8 +138,8 @@ header {
     padding: 10px 0;
 }
 
-.nav-bar li{
-    display:inline-block;
+.nav-bar li {
+    display: inline-block;
     padding: 5px;
 }
 
@@ -48,7 +168,7 @@ ul {
 
 li {
     margin-bottom: 5px;
-    text-align:center;
+    text-align: center;
 }
 
 a {
@@ -56,10 +176,10 @@ a {
     color: #000000;
 }
 
-.create-practice form {
-    background-color: #f9f9f9;
+.practice-form {
+    background-color: #00A898;
+    overflow: hidden;
     padding: 15px;
-    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -77,12 +197,12 @@ textarea {
     border-radius: 3px;
 }
 
-textarea{
+textarea {
     height: 200px;
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #0b0c0d;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -91,42 +211,43 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #585c5f;
 }
 
 /* Style the custom-select container */
 .custom-select {
     position: relative;
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
+    /* Adjust width as needed */
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-  }
-  
-  /* Style the select element */
-  .custom-select select {
+}
+
+/* Style the select element */
+.custom-select select {
     width: 100%;
     padding: 10px;
     border: none;
     outline: none;
     background-color: #fff;
     color: #333;
-    cursor:pointer;
-  }
+    cursor: pointer;
+}
 
 
-  /* Style the options */
-  .custom-select select option {
+/* Style the options */
+.custom-select select option {
     background-color: #fff;
     color: #333;
-  }
-.create-practice-button{
-    margin-top: 30px;
-    margin-left: 120px;
-    padding: 10px;
-    border-radius: 18px;
-    background-color: gold;
-    border: 1px solid gold;
-    font-weight:bold;
 }
-  
+
+.create-practice-button {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 120px;
+    cursor: pointer;
+    margin-top: 20px;
+}
