@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widthgi, initial-scale=1.0">
@@ -7,10 +8,24 @@
     <link rel="stylesheet" href="styles/stylesheet.css">
     <script src="scripts/script.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/bf61b7ee-49f0-48a8-9130-67b37231ee7b/webchat/config.js" defer></script>
+    <script src="https://mediafiles.botpress.cloud/bf61b7ee-49f0-48a8-9130-67b37231ee7b/webchat/config.js"
+        defer></script>
     <script src="https://kit.fontawesome.com/7a94df6a8f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
     <header>
         <h1>Nexus</h1>
         <ul class="nav-bar">
@@ -19,42 +34,46 @@
             <li><a href="Chat.html">Your Team</a></li>
         </ul>
     </header>
-    <main>
-        <section class="practice-form">
-            <h2>Create Practice</h2>
+    <main style="background-color: #00A898">
+        <section class=" practice-form">
+            <h2 style="color:white;">Create Practice</h2>
             <form>
-                <label for="practice-name">Practice Name:</label>    
+                <label for="practice-name">Practice Name:</label>
                 <input type="text" id="practice-name" name="practice-name" required placeholder=" ex: practice 1">
-            
+
                 <label for="practice-date">Practice Date:</label>
                 <input type="text" id="practice-date" name="practice-date" required placeholder=" ex: 2 of september">
 
                 <label for="practice-duration">Practice Duration:</label>
                 <div class="custom-select">
                     <select name="practice-duration" id="practice-duration">
-                      <option value="" disabled selected>Select an option</option>
+                        <option value="" disabled selected>Select an option</option>
                     </select>
-                  </div>
-                  <input type="text" id="other-duration" name="other-duration"  placeholder="other...">
-                  
-<br>
+                </div>
+                <input type="text" id="other-duration" name="other-duration" placeholder="other...">
+
+                <br>
                 <label for="practice-name">Practice Goals:</label>
                 <div class="custom-select">
                     <select name="practice-goals" id="practice-goals">
-                      <option value="" disabled selected>Select an option</option>
+                        <option value="" disabled selected>Select an option</option>
                     </select>
-                  </div>
-                  <input type="text" id="other-goals" name="other-goals"  placeholder="other...">
-<br>
+                </div>
+                <input type="text" id="other-goals" name="other-goals" placeholder="other...">
+                <br>
                 <label for="practice-description">Practice Description:</label>
-                <textarea id="practice-description" name="practice-description" rows="4"  placeholder="Create your set 1..."></textarea>
-        
-                <textarea id="practice-description" name="practice-description" rows="4"  placeholder="Create your set 2..."></textarea>
-                
-                <textarea id="practice-description" name="practice-description" rows="4" placeholder="Create your set 3..."></textarea>
-               
-                <textarea id="practice-description" name="practice-description" rows="4" placeholder="Create your set 4..."></textarea>
-               
+                <textarea id="practice-description" name="practice-description" rows="4"
+                    placeholder="Create your set 1..."></textarea>
+
+                <textarea id="practice-description" name="practice-description" rows="4"
+                    placeholder="Create your set 2..."></textarea>
+
+                <textarea id="practice-description" name="practice-description" rows="4"
+                    placeholder="Create your set 3..."></textarea>
+
+                <textarea id="practice-description" name="practice-description" rows="4"
+                    placeholder="Create your set 4..."></textarea>
+
 
                 <button type="submit" id="createPracticeButton">Create Practice</button>
             </form>
@@ -62,4 +81,5 @@
     </main>
 
 </body>
+
 </html>
