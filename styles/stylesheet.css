@@ -21,6 +21,25 @@ body {
     border: 2px dashed #fff;
 }
 
+#right {
+    width: 700px;
+    height: 240px;
+}
+
+.list {
+    background: #000;
+    height: 20px;
+    width: 50px;
+    color: #fff;
+    align-items: center;
+    cursor: grab;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
 span {
     position: absolute;
     top: 50%;
