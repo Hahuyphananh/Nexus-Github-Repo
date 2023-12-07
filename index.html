@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widthgi, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swimming Practice App</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
     <script src="scripts/script.js"></script>
@@ -64,94 +64,99 @@
                 <br>
 
                 <div id="left">
-                    <div class="list" draggable="true">50m</div>
-                    <div class="list" draggable="true">100m</div>
-                    <div class="list" draggable="true">200m</div>
-                    <div class="list" draggable="true">400m</div>
-                    <div class="list" draggable="true">500m</div>
-                    <div class="list" draggable="true">2 x</div>
-                    <div class="list" draggable="true">4 x</div>
-                    <div class="list" draggable="true">6 x</div>
-                    <div class="list" draggable="true">8 x</div>
-                    <div class="list" draggable="true">16 x</div>
-                    <div class="list" draggable="true">24 x</div>
-                    <div class="list" draggable="true">Crawl</div>
-                    <div class="list" draggable="true">Dos</div>
-                    <div class="list" draggable="true">Brasse</div>
-                    <div class="list" draggable="true" style="width: 60px;">Papillon</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">50m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">100m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">200m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">400m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">500m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">2 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">4 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">6 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">8 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">16 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">24 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Crawl</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Dos</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Brasse</div>
+                    <div id="list" draggable="true" style="width: 60px;" ondragstart="drag(event)">Papillon</div>
                 </div>
 
                 <label for="practice-description">Practice Description:</label>
 
-                <div id="right">
+                <div class="box-container">
+                    <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <textarea id="practice-description" name="practice-description" rows="4"
                         placeholder="Create your set 1..."></textarea>
                 </div>
 
                 <div id="left">
-                    <div class="list" draggable="true">50m</div>
-                    <div class="list" draggable="true">100m</div>
-                    <div class="list" draggable="true">200m</div>
-                    <div class="list" draggable="true">400m</div>
-                    <div class="list" draggable="true">500m</div>
-                    <div class="list" draggable="true">2 x</div>
-                    <div class="list" draggable="true">4 x</div>
-                    <div class="list" draggable="true">6 x</div>
-                    <div class="list" draggable="true">8 x</div>
-                    <div class="list" draggable="true">16 x</div>
-                    <div class="list" draggable="true">24 x</div>
-                    <div class="list" draggable="true">Crawl</div>
-                    <div class="list" draggable="true">Dos</div>
-                    <div class="list" draggable="true">Brasse</div>
-                    <div class="list" draggable="true" style="width: 60px;">Papillon</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">50m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">100m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">200m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">400m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">500m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">2 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">4 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">6 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">8 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">16 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">24 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Crawl</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Dos</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Brasse</div>
+                    <div id="list" draggable="true" style="width: 60px;" ondragstart="drag(event)">Papillon</div>
                 </div>
 
-                <div id="right">
+                <div class="box-container">
+                    <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <textarea id="practice-description" name="practice-description" rows="4"
                         placeholder="Create your set 2..."></textarea>
                 </div>
 
                 <div id="left">
-                    <div class="list" draggable="true">50m</div>
-                    <div class="list" draggable="true">100m</div>
-                    <div class="list" draggable="true">200m</div>
-                    <div class="list" draggable="true">400m</div>
-                    <div class="list" draggable="true">500m</div>
-                    <div class="list" draggable="true">2 x</div>
-                    <div class="list" draggable="true">4 x</div>
-                    <div class="list" draggable="true">6 x</div>
-                    <div class="list" draggable="true">8 x</div>
-                    <div class="list" draggable="true">16 x</div>
-                    <div class="list" draggable="true">24 x</div>
-                    <div class="list" draggable="true">Crawl</div>
-                    <div class="list" draggable="true">Dos</div>
-                    <div class="list" draggable="true">Brasse</div>
-                    <div class="list" draggable="true" style="width: 60px;">Papillon</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">50m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">100m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">200m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">400m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">500m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">2 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">4 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">6 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">8 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">16 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">24 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Crawl</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Dos</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Brasse</div>
+                    <div id="list" draggable="true" style="width: 60px;" ondragstart="drag(event)">Papillon</div>
                 </div>
 
-                <div id="right">
+                <div class="box-container">
+                    <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <textarea id="practice-description" name="practice-description" rows="4"
                         placeholder="Create your set 3..."></textarea>
                 </div>
 
                 <div id="left">
-                    <div class="list" draggable="true">50m</div>
-                    <div class="list" draggable="true">100m</div>
-                    <div class="list" draggable="true">200m</div>
-                    <div class="list" draggable="true">400m</div>
-                    <div class="list" draggable="true">500m</div>
-                    <div class="list" draggable="true">2 x</div>
-                    <div class="list" draggable="true">4 x</div>
-                    <div class="list" draggable="true">6 x</div>
-                    <div class="list" draggable="true">8 x</div>
-                    <div class="list" draggable="true">16 x</div>
-                    <div class="list" draggable="true">24 x</div>
-                    <div class="list" draggable="true">Crawl</div>
-                    <div class="list" draggable="true">Dos</div>
-                    <div class="list" draggable="true">Brasse</div>
-                    <div class="list" draggable="true" style="width: 60px;">Papillon</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">50m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">100m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">200m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">400m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">500m</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">2 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">4 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">6 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">8 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">16 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">24 x</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Crawl</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Dos</div>
+                    <div id="list" draggable="true" ondragstart="drag(event)">Brasse</div>
+                    <div id="list" draggable="true" style="width: 60px;" ondragstart="drag(event)">Papillon</div>
                 </div>
-                <div id="right">
+
+                <div class="box-container">
+                    <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <textarea id="practice-description" name="practice-description" rows="4"
                         placeholder="Create your set 4..."></textarea>
                 </div>
