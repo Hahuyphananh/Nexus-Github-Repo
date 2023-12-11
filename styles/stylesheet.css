@@ -165,6 +165,10 @@ textarea {
     border-radius: 3px;
 }
 
+input[type="text"] {
+    width: 90%;
+}
+
 textarea {
     height: 223px;
 }
@@ -211,12 +215,12 @@ button[type="submit"]:hover {
     color: #333;
 }
 
-#createPracticeButton {
+.create-practice-button {
     background-color: gold;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    margin-left: 300px;
+    margin-left: 650px;
     cursor: pointer;
     margin-top: 20px;
     color: #000;

@@ -21,13 +21,13 @@
     <header>
         <h1>Nexus</h1>
         <ul class="nav-bar">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Home</a></li>
             <li><a href="practices.html">My Practices</a></li>
             <li><a href="Chat.html">Your Team</a></li>
         </ul>
     </header>
     <main style="background-color: #00A898">
-        <section class=" practice-form">
+        <section class="practice-form" style="text-align:center;">
             <h2 style="color:white;">Create Practice</h2>
             <form>
                 <label for="practice-name">Practice Name:</label>
@@ -37,20 +37,33 @@
                 <input type="text" id="practice-date" name="practice-date" required placeholder=" ex: 2 of september">
 
                 <label for="practice-duration">Practice Duration:</label>
-                <div class="custom-select">
+                <div class="custom-select" style="margin-left: 280px;">
                     <select name="practice-duration" id="practice-duration">
                         <option value="" disabled selected>Select an option</option>
+                        <option value="Strength/Power">Strength/Power</option>
+                        <option value="Speed/Intensity">Speed/Intensity</option>
+                        <option value="Technique">Technique</option>
+                        <option value="Taper">Taper</option>
                     </select>
                 </div>
+
+                <br>
+
                 <input type="text" id="other-duration" name="other-duration" placeholder="other...">
 
                 <br>
                 <label for="practice-name">Practice Goals:</label>
-                <div class="custom-select">
+                <div class="custom-select" style="margin-left: 280px;">
                     <select name="practice-goals" id="practice-goals">
                         <option value="" disabled selected>Select an option</option>
+                        <option value="Strength/Power">Strength/Power</option>
+                        <option value="Speed/Intensity">Speed/Intensity</option>
+                        <option value="Technique">Technique</option>
+                        <option value="Taper">Taper</option>
                     </select>
                 </div>
+
+                <br>
 
                 <input type="text" id="other-goals" name="other-goals" placeholder="other...">
                 <br>
@@ -154,7 +167,7 @@
                 </div>
 
 
-                <button type="submit" id="createPracticeButton">Create Practice</button>
+                <button type="submit" id="createPracticeButton" style="margin-left:-50px;">Create Practice</button>
             </form>
         </section>
     </main>

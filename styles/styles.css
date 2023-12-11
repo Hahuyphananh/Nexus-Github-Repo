@@ -1,15 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #03be80;;
 }
 
-a{
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    top: 20%;
+    right: 70%;
+    width: 800px;
+    height: 800px;
+    background-image: linear-gradient(red, yellow, rgb(255, 136, 0));
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+.slider-thumb2::before {
+    position: absolute;
+    content: "";
+    right: 0%;
+    top: 10%;
+    width: 800px;
+    height: 800px;
+    background-image: linear-gradient(rgb(247, 0, 255), rgb(30, 0, 255), rgb(255, 0, 93));
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
+a {
     text-decoration: none;
 }
 
@@ -17,21 +71,15 @@ a{
     background-color: #03be80;
     border-radius: 5px;
     padding: 50px;
-    padding-right:60px;
+    padding-right: 60px;
+    padding-top: 20px;
     max-width: 300px;
     width: 100%;
     text-align: center;
-    position: relative; /* Needed for positioning the logo */
+    position: relative;
+    /* Needed for positioning the logo */
 }
 
-.app-logo {
-    width: 410px; /* Adjust the size as needed */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: -50px; /* Adjust the top position to your preference */
-    left: 50%; /* Center the logo horizontally */
-    transform: translateX(-50%); /* Center the logo horizontally */
-}
 
 .login-form {
     text-align: center;
@@ -65,13 +113,16 @@ button[type="submit"] {
     background-color: gold;
     color: #000;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
-.new{
+
+.new {
     color: #000;
 }
