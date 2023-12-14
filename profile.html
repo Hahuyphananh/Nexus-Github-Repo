@@ -29,6 +29,7 @@
     <br>
 
     <div class="profile-container">
+        <!--<img src="swim.png" id="swim-image" style="display:none;">-->
         <img src="placeholder.jpg" alt="profile picture"
             style="margin-left: 55px; border-radius: 50%; border: solid 1px black;margin-top: 10px;" id="profile-pic">
 
@@ -37,6 +38,10 @@
 
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
         <label for="input-file" class="profile-pic-label">Update Image</label>
+        <!--<button onclick="pfpChange()">change image</button>-->
+
+
+
 
     </div>
     <br><br>
@@ -64,7 +69,20 @@
 
     </div>
 
-    <button class="edit-profile-button"><i class="fa-solid fa-pen" style="padding-right:5px;"></i>Edit profile</button>
+    <div id="overlay" onclick="off()">
+        <h1 style="margin-top: 200px;">Edit Profile</h1>
+        <div id="edit-profile" style="display:none;">
+            <p style="text-align:center;padding-top:10px;color: #fff;">Change Username</p>
+            <input type="text" id="edit-username">
+            <p style="text-align:center;padding-top:10px;color: #fff;">Change Name</p>
+            <input type="text" id="edit-username">
+            <p style="text-align:center;padding-top:10px;color: #fff;">Change Password</p>
+            <input type="text" id="edit-username">
+        </div>
+    </div>
+
+    <button class="edit-profile-button" onclick="on()"><i class="fa-solid fa-pen" style="padding-right:5px;"></i>Edit
+        profile</button>
 </body>
 </body>
 
