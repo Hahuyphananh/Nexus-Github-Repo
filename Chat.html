@@ -2,47 +2,106 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/chat.css">
-    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/bf61b7ee-49f0-48a8-9130-67b37231ee7b/webchat/config.js"
+        defer></script>
     <script src="https://kit.fontawesome.com/7a94df6a8f.js" crossorigin="anonymous"></script>
-    <title>Swimming Chat</title>
 </head>
 
 <body>
-
     <div class="slider-thumb"></div>
     <div class="slider-thumb2"></div>
 
-    <header>
-        <h1>Nexus</h1>
-        <ul class="nav-bar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="practices.html">My Practices</a></li>
-            <li><a href="Chat.html">Your Team</a></li>
-        </ul>
-    </header>
-
     <div class="chat-container">
-        <div class="chat-header">
-            <h1>Your Team</h1>
-        </div>
-        <div class="chat-messages">
-            <div class="message incoming">
-                <div class="message-content">
-                    <p>Hello, how can I help you?</p>
+        <div class="chat-cards">
+            <div class="chat-card-header">
+                <h2 style="text-align:center;">Generate your practices</h2>
+            </div>
+            <div class="chat-card-body">
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+                <div class="chat chat-bot">
+                    <span class="user-icon"><i class="fa-solid fa-robot"></i></span>
+                    <p>Hello! May I help you today?</p>
+                </div>
+                <div class="chat user">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <p>Make me a practice for beginners</p>
+                </div>
+
+            </div>
+
+            <div class="chat-card-footer">
+                <textarea name="message" id="input-chat" cols="10" rows="1"
+                    placeholder="Ask me a question..."></textarea>
+                <div class="sending-icon">
+                    <i class="fa-regular fa-paper-plane"></i>
                 </div>
             </div>
-            <div class="message outgoing">
-                <div class="message-content">
-                    <p>Hi there, I have a question about breaststroke.</p>
-                </div>
-            </div>
-            <!-- Add more incoming and outgoing messages here -->
-        </div>
-        <div class="chat-input">
-            <input type="text" id="message-input" placeholder="Type your message...">
-            <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </div>
 </body>

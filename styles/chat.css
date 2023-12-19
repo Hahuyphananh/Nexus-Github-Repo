@@ -1,81 +1,143 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:  #00A898;
-}
-/*sup ma boi*/
-.chat-container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 800px;
-}
-
-.chat-header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.chat-messages {
-    max-height: 300px;
-    overflow-y: scroll;
-}
-
-.message {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.message.incoming {
-    background-color: #f1f1f1;
-    text-align: left;
-}
-
-.message.outgoing {
-    background-color: #007BFF;
-    text-align: right;
-    color: #fff;
-}
-
-.message-content {
-    padding: 10px;
-}
-
-.chat-input {
-    margin-top: 10px;
+    background-color: #000000;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-#message-input {
-    flex-grow: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top:300px;
+.chat-container {
+    width: 640px;
+    background-color: #00A898;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#send-button {
-    padding: 5px 10px;
-    background-color: #007BFF;
+.chat-card-header {
+    background-color: #2123d2;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top:300px;
-    width: 50px;
-    height: 30px;
+    width: 610px;
+    height: 40px;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .chat-container {
-        max-width: 100%;
+.chat-cards {
+    overflow-y: auto;
+}
+
+.chat-card-body {
+    padding: 0.8rem;
+    font-size: 1rem;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.chat-card-body .chat-bot {
+    display: flex;
+    align-items: center;
+}
+
+.chat-card-body .user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.chat-card-body .chat-bot p {
+    background-color: rgb(30, 36, 67);
+    border-radius: 10px;
+    padding: 0.8rem;
+    width: 50%;
+    white-space: pre-wrap;
+    color: #fff;
+}
+
+.chat-card-body .user p {
+    background-color: #205134;
+    border-radius: 10px;
+    padding: 0.8rem;
+    width: 50%;
+    white-space: pre-wrap;
+    color: #fff;
+}
+
+.chat-bot .user {
+    margin: 1rem 0;
+}
+
+.chat .user-icon {
+    width: 45px;
+    height: 45px;
+    font: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    border: 2px solid #ffffff;
+}
+
+.user-icon .fa-robot {
+    color: rgb(30, 36, 67);
+}
+
+.user-icon .fa-user {
+    color: #205134;
+}
+
+.slider-thumb::before {
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: 0%;
+    width: 800px;
+    height: 800px;
+    background-image: linear-gradient(red, yellow, rgb(255, 136, 0));
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+.slider-thumb2::before {
+    position: absolute;
+    content: "";
+    right: 0%;
+    top: 30%;
+    width: 800px;
+    height: 800px;
+    background-image: linear-gradient(rgb(247, 0, 255), rgb(30, 0, 255), rgb(255, 0, 93));
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
     }
 
-    /* Adjust other styles as needed */
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
 }
