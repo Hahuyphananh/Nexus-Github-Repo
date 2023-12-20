@@ -36,14 +36,11 @@
         <h1 style="color: #000;">Username</h1>
         <h2 style="color: #000;">Full name</h2>
 
-        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" onchange="loadFile(event)">
         <label for="input-file" class="profile-pic-label">Update Image</label>
-        <!--<button onclick="pfpChange()">change image</button>-->
-
-
-
-
+        <!--<button onclick="changeImage()">Update image</button>-->
     </div>
+
     <br><br>
 
     <div class="link-to-page-container">

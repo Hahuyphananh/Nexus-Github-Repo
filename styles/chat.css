@@ -68,15 +68,14 @@ body {
 }
 
 .chat .user-icon {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     font: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     margin-right: 0.5rem;
-    border: 2px solid #ffffff;
 }
 
 .user-icon .fa-robot {
@@ -85,6 +84,13 @@ body {
 
 .user-icon .fa-user {
     color: #205134;
+}
+
+.chat-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .slider-thumb::before {
