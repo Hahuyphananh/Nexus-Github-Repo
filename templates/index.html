@@ -1,6 +1,8 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 
+{% block head %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +14,10 @@
         defer></script>
     <script src="https://kit.fontawesome.com/7a94df6a8f.js" crossorigin="anonymous"></script>
 </head>
+{%endblock%}
 
 
+{% block body %}
 <body>
 
     <div class="slider-thumb"></div>
@@ -174,5 +178,6 @@
     </main>
 
 </body>
+{%endblock%}
 
 </html>
